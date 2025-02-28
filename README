@@ -1,0 +1,95 @@
+# JavaScript Data Types and Console Tasks
+
+## Overview
+This project demonstrates various JavaScript data types, comparisons, logical operations, user prompts, and string manipulations using the `console.log` function.
+
+## Contents
+1. **Variable Declarations** - Declaring different data types.
+2. **Type Checking** - Using `typeof` to check data types.
+3. **Boolean Comparisons** - Checking equality and conversions.
+4. **Logical Operations** - Demonstrating AND, OR, and NOT operations.
+5. **Mathematical Operations** - Calculating area of a triangle.
+6. **User Input Handling** - Checking driving age eligibility.
+7. **String Manipulations** - Various string functions.
+8. **Conditional Statements** - Comparisons and grading system.
+
+## Code Explanation
+
+### 1. Variable Declarations
+Declares variables with different data types including strings, numbers, and booleans.
+```javascript
+let firstName = "Michel";
+let age = 25;
+let isMarried = false;
+```
+
+### 2. Type Checking
+Uses `typeof` to check data types of variables.
+```javascript
+console.log(typeof firstName); // string
+console.log(typeof age); // number
+console.log(typeof isMarried); // boolean
+```
+
+### 3. Boolean Comparisons
+Checks equality between different types and values.
+```javascript
+console.log(typeof '10' === typeof 10); // false
+console.log(parseInt('9.8') === 10); // false
+```
+
+### 4. Logical Operations
+Demonstrates logical AND, OR, and NOT.
+```javascript
+console.log(4 > 3 && 10 < 12); // true
+console.log(!(4 > 3)); // false
+```
+
+### 5. Mathematical Operations
+Calculates the area of a triangle.
+```javascript
+let base = 20, height = 10;
+let area = 0.5 * base * height;
+console.log(`The area of the triangle is: ${area}`);
+```
+
+### 6. User Input Handling
+Checks if a user is old enough to drive.
+```javascript
+let birthYear = 2005;
+let currentYear = new Date().getFullYear();
+let userAge = currentYear - birthYear;
+if (userAge >= 18) {
+    console.log("You are old enough to drive.");
+} else {
+    console.log("You will be allowed to drive after " + (18 - userAge) + " years.");
+}
+```
+
+### 7. String Manipulations
+Applies various string operations such as slicing, finding indices, and transformations.
+```javascript
+let challenge = "30 Days Of JavaScript";
+console.log(challenge.toUpperCase());
+console.log(challenge.includes("Script"));
+console.log(challenge.indexOf("a"));
+```
+
+### 8. Conditional Statements
+Implements a grading system based on scores.
+```javascript
+let score = 85;
+if (score >= 80 && score <= 100) {
+    console.log("A");
+} else if (score >= 70) {
+    console.log("B");
+} else if (score >= 60) {
+    console.log("C");
+} else {
+    console.log("F");
+}
+```
+
+## Usage
+Run the JavaScript file in a browser console or Node.js environment to see the outputs of different operations.
+
